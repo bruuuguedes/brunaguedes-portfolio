@@ -10,20 +10,21 @@ html {
 }
 
 body {
-    font-family: 'Space Mono', monospace;
+    font-family: 'JetBrains Mono', monospace;
     line-height: 1.6;
-    color: #000000;
-    background-color: #E5E5E5;
+    color: #202020;
+    background-color: #F5F5F5;
     font-size: 14px;
 }
 
 /* Variáveis CSS para cores */
 :root {
-    --neon-green: #CCFF00;
-    --black: #000000;
-    --gray-light: #E5E5E5;
+    --white-smoke: #F5F5F5;
+    --metallic-silver: #B9C8D7;
+    --red-orange: #FF4628;
+    --charcoal-black: #202020;
     --white: #FFFFFF;
-    --gray-dark: #333333;
+    --neon-green: #CCFF00; /* Mantido para Local AG */
 }
 
 /* Container padrão */
@@ -39,8 +40,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--black);
-    border-bottom: 2px solid var(--neon-green);
+    background: var(--charcoal-black);
+    border-bottom: 2px solid var(--red-orange);
     z-index: 1000;
     padding: 12px 0;
 }
@@ -54,7 +55,7 @@ body {
 .nav-brand a {
     font-size: 18px;
     font-weight: 700;
-    color: var(--neon-green);
+    color: var(--red-orange);
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -75,7 +76,7 @@ body {
 }
 
 .nav-menu a:hover {
-    color: var(--neon-green);
+    color: var(--red-orange);
 }
 
 .hamburger {
@@ -87,7 +88,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--neon-green);
+    background: var(--red-orange);
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -110,7 +111,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--black);
+    background: var(--charcoal-black);
     padding: 80px 0 40px 0;
 }
 
@@ -134,13 +135,13 @@ body {
     font-size: clamp(28px, 8vw, 48px);
     font-weight: 700;
     margin-bottom: 16px;
-    color: var(--neon-green);
+    color: var(--red-orange);
     line-height: 1.1;
     letter-spacing: 2px;
 }
 
 .hero-subtitle {
-    font-size: clamp(12px, 3vw, 16px);
+    font-size: clamp(14px, 3.5vw, 18px);
     font-weight: 400;
     color: var(--white);
     margin-bottom: 8px;
@@ -148,8 +149,8 @@ body {
 }
 
 .hero-description {
-    font-size: clamp(11px, 2.5vw, 14px);
-    color: var(--gray-light);
+    font-size: clamp(12px, 3vw, 16px);
+    color: var(--metallic-silver);
     font-style: italic;
 }
 
@@ -159,8 +160,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 3px solid var(--neon-green);
-    box-shadow: 0 0 20px rgba(204, 255, 0, 0.3);
+    border: 3px solid var(--red-orange);
+    box-shadow: 0 0 20px rgba(255, 70, 40, 0.3);
 }
 
 /* Títulos de Seção */
@@ -169,7 +170,7 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 32px;
-    color: var(--black);
+    color: var(--charcoal-black);
     letter-spacing: 1px;
 }
 
@@ -187,16 +188,16 @@ body {
 .about-text {
     font-size: clamp(13px, 3vw, 16px);
     margin-bottom: 20px;
-    color: var(--black);
-    text-align: left;
+    color: var(--charcoal-black);
+    text-align: justify;
     line-height: 1.6;
 }
 
 .highlight-box {
-    background: var(--black);
+    background: var(--charcoal-black);
     padding: 24px;
     border-radius: 8px;
-    border-left: 4px solid var(--neon-green);
+    border-left: 4px solid var(--red-orange);
     margin: 32px 0;
 }
 
@@ -206,16 +207,17 @@ body {
     margin: 0;
     font-style: italic;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .highlight-text strong {
-    color: var(--neon-green);
+    color: var(--red-orange);
 }
 
 /* Seção Expertise */
 .expertise-section {
     padding: 60px 0;
-    background-color: var(--gray-light);
+    background-color: var(--white-smoke);
 }
 
 .expertise-grid {
@@ -229,23 +231,24 @@ body {
     background: var(--white);
     padding: 24px;
     border-radius: 8px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--metallic-silver);
 }
 
 .expertise-title {
     font-size: clamp(16px, 4vw, 20px);
     font-weight: 700;
     margin-bottom: 16px;
-    color: var(--black);
+    color: var(--charcoal-black);
     line-height: 1.3;
     letter-spacing: 0.5px;
 }
 
 .expertise-description {
     font-size: clamp(13px, 3vw, 15px);
-    color: var(--black);
+    color: var(--charcoal-black);
     line-height: 1.6;
     margin-bottom: 16px;
+    text-align: justify;
 }
 
 .expertise-description:last-child {
@@ -253,7 +256,7 @@ body {
 }
 
 .expertise-description strong {
-    color: var(--black);
+    color: var(--charcoal-black);
     background: var(--neon-green);
     padding: 2px 4px;
     font-weight: 700;
@@ -261,16 +264,16 @@ body {
 
 /* Seção Serviços */
 .services-section {
-    background: var(--black);
+    background: var(--charcoal-black);
     padding: 32px 24px;
     border-radius: 8px;
-    border: 2px solid var(--neon-green);
+    border: 2px solid var(--red-orange);
 }
 
 .services-title {
     font-size: clamp(16px, 4vw, 20px);
     font-weight: 700;
-    color: var(--neon-green);
+    color: var(--red-orange);
     margin-bottom: 24px;
     text-align: center;
     letter-spacing: 0.5px;
@@ -286,8 +289,9 @@ body {
     font-size: clamp(12px, 2.8vw, 14px);
     color: var(--white);
     padding: 8px 0;
-    border-bottom: 1px solid var(--gray-dark);
+    border-bottom: 1px solid var(--metallic-silver);
     line-height: 1.5;
+    text-align: justify;
 }
 
 .service-item:last-child {
@@ -297,11 +301,11 @@ body {
 /* Seção ProDJManager */
 .prodjmanager-section {
     padding: 60px 0;
-    background-color: var(--black);
+    background-color: var(--charcoal-black);
 }
 
 .prodjmanager-section .section-title {
-    color: var(--neon-green);
+    color: var(--red-orange);
 }
 
 .prodjmanager-content {
@@ -310,19 +314,12 @@ body {
     text-align: center;
 }
 
-.prodjmanager-subtitle {
-    font-size: clamp(16px, 4vw, 20px);
-    font-weight: 700;
-    color: var(--white);
-    margin-bottom: 24px;
-    letter-spacing: 0.5px;
-}
-
 .prodjmanager-text {
     font-size: clamp(13px, 3vw, 16px);
     margin-bottom: 20px;
     color: var(--white);
     line-height: 1.6;
+    text-align: justify;
 }
 
 .prodjmanager-cta {
@@ -331,23 +328,23 @@ body {
 
 .prodjmanager-button {
     display: inline-block;
-    background: var(--neon-green);
-    color: var(--black);
+    background: var(--red-orange);
+    color: var(--white);
     padding: 16px 32px;
     font-size: clamp(12px, 3vw, 14px);
     font-weight: 700;
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
-    font-family: 'Space Mono', monospace;
-    border: 2px solid var(--neon-green);
+    font-family: 'JetBrains Mono', monospace;
+    border: 2px solid var(--red-orange);
     letter-spacing: 0.5px;
 }
 
 .prodjmanager-button:hover {
     background: transparent;
-    color: var(--neon-green);
-    box-shadow: 0 0 15px rgba(204, 255, 0, 0.5);
+    color: var(--red-orange);
+    box-shadow: 0 0 15px rgba(255, 70, 40, 0.5);
 }
 
 /* Seção Contato */
@@ -358,10 +355,10 @@ body {
 
 .contact-intro {
     font-size: clamp(13px, 3vw, 16px);
-    text-align: center;
+    text-align: justify;
     max-width: 600px;
     margin: 0 auto 40px auto;
-    color: var(--black);
+    color: var(--charcoal-black);
     line-height: 1.6;
 }
 
@@ -386,25 +383,25 @@ body {
 .contact-label {
     font-size: clamp(11px, 2.5vw, 12px);
     font-weight: 700;
-    color: var(--black);
+    color: var(--charcoal-black);
     letter-spacing: 0.5px;
 }
 
 .contact-link {
     font-size: clamp(13px, 3vw, 16px);
-    color: var(--black);
+    color: var(--charcoal-black);
     text-decoration: none;
     padding: 8px 16px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--metallic-silver);
     border-radius: 4px;
     transition: all 0.3s ease;
     background: var(--white);
 }
 
 .contact-link:hover {
-    background: var(--neon-green);
-    border-color: var(--neon-green);
-    color: var(--black);
+    background: var(--red-orange);
+    border-color: var(--red-orange);
+    color: var(--white);
 }
 
 .social-section {
@@ -414,7 +411,7 @@ body {
 .social-title {
     font-size: clamp(16px, 4vw, 20px);
     font-weight: 700;
-    color: var(--black);
+    color: var(--charcoal-black);
     margin-bottom: 24px;
     letter-spacing: 0.5px;
 }
@@ -427,10 +424,10 @@ body {
 }
 
 .social-link {
-    color: var(--black);
+    color: var(--charcoal-black);
     text-decoration: none;
     padding: 8px 16px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--metallic-silver);
     border-radius: 4px;
     transition: all 0.3s ease;
     font-size: clamp(11px, 2.5vw, 12px);
@@ -440,18 +437,19 @@ body {
 }
 
 .social-link:hover {
-    background: var(--black);
-    color: var(--neon-green);
+    background: var(--charcoal-black);
+    color: var(--red-orange);
+    border-color: var(--charcoal-black);
 }
 
 /* Footer */
 .footer {
-    background: var(--black);
+    background: var(--charcoal-black);
     color: var(--white);
     padding: 24px 0;
     text-align: center;
     font-size: clamp(10px, 2vw, 12px);
-    border-top: 2px solid var(--neon-green);
+    border-top: 2px solid var(--red-orange);
 }
 
 /* Responsividade para Desktop */
@@ -517,6 +515,10 @@ body {
     .contact-section {
         padding: 80px 0;
     }
+    
+    .contact-intro {
+        text-align: center;
+    }
 }
 
 /* Menu mobile ativo */
@@ -526,14 +528,14 @@ body {
         left: -100%;
         top: 60px;
         flex-direction: column;
-        background-color: var(--black);
+        background-color: var(--charcoal-black);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 24px 0;
         gap: 16px;
-        border-top: 2px solid var(--neon-green);
+        border-top: 2px solid var(--red-orange);
     }
 
     .nav-menu.active {
